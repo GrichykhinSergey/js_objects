@@ -1,4 +1,4 @@
-const person = {
+ const person = {
     firstName: 'Jack',
     lastName: 'Sparrow',
     age: 25,
