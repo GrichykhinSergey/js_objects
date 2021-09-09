@@ -11,20 +11,13 @@ const person = {
   
   for (let prop in person) {
     if (prop == 'firstName') {
-      person['First name'] = person.firstName;
-      delete person.firstName;
-      output('First name', person['First name']);
+      output('First name', person[prop]);
     } else if (prop == 'lastName') {
-      person['Last name'] = person.lastName;
-      delete person.lastName;
-      output('Last name', person['Last name']);
+      output('Last name', person[prop]);
     } else if (prop == 'age') {
-      person['Age'] = person.age + ' ages';
-      delete person.age;
-      output('Age', person['Age']);
+      output('Age', `${person[prop]} ages`);
     } else {
-      person['Where to find'] = person.location;
-      delete person.location;
-      output('Where to find', person['Where to find']);
+      output('Where to find', person[prop]);
     }
   }
+  
